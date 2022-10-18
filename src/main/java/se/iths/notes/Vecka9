@@ -1,0 +1,43 @@
+2022-10-18
+
+
+
+MVC = Model-View-Controller
+Model - Innehåller all data
+        - Kan vara en klass men kan även vara 100 olika klasser
+        - Alla klasser som innehåller data för programmet
+        - Har man bara en klass kan man döpa den till Model.Java
+        - Har man flera klasser kan man göra ett package som heter model
+        - Model måste känna till controller
+
+
+Controller - Vad som händer när man klickar på en knapp
+        - Man kan ha en eller flera klasser som är controller
+        - Har man bara en klass kan man döpa den till Controller.Java
+        - Har man flera klasser kan man göra ett package som heter controller
+        . Controllern måste känna till model
+
+View - Vyn är det som visas
+        - Vyn måste känna till model
+
+Skapa gränssnitt med javakod:
+var root = new HBox();
+root.setPadding(new Insets(10));
+var lbl = new Label(lyrics);
+root.getChildren().add(lbl);
+var scene = new Scene(root);
+stage.setTitle("No sleep");
+stage.setScene(scene);
+stage.show();
+
+Man brukar låta FXML-filen skapa gränssnittet med hjälp av sceneBuilder
+
+FXML-filen representerar en vy eller en del av en vy i det grafiska gränssnittet
+
+Grunden är alltid en "Stage"
+stage.show(); - Om man inte har den så syns inte fönstret på skärmen, applikationen körs i bakgrunden
+
+I main.metoden måste man anropa launch(); för att applikationen ska startas
+    Launch(); är en metod som finns färdig i Application
+
+

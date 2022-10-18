@@ -57,7 +57,7 @@
                 <version>0.0.8</version>
                 <executions>
                     <execution>
-                        <!-- Default configuration for running with: mvn clean javafx:run -->
+                        <!-- Default configuration for running with: mvn clean Vecka9:run -->
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>se.iths.javafx/se.iths.javafx.HelloApplication</mainClass>
