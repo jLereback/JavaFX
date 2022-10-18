@@ -40,4 +40,21 @@ stage.show(); - Om man inte har den så syns inte fönstret på skärmen, applik
 I main.metoden måste man anropa launch(); för att applikationen ska startas
     Launch(); är en metod som finns färdig i Application
 
+Observer Pattern
 
+
+SimpleStringProperty in JavaFX Bean
+
+public class Model {
+    private StringProperty text;
+    public Model(){
+        text = new SimpleStringProperty();
+    }
+    public final String getText(){
+        return text.get();
+    }
+    public void setText(String s){text.setValue(s);}
+    public StringProperty textProperty(){
+        return text;
+    }
+}

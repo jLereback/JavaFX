@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
+<?import javafx.scene.control.TextField?>
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.iths.javafx.HelloController">
     <center>
         <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
@@ -22,7 +23,8 @@
    <top>
        <VBox prefHeight="67.0" prefWidth="600.0" BorderPane.alignment="CENTER">
            <Button fx:id="button1" onAction="#onHelloButtonClick" onMouseClicked="#buttonClicked" text="Klicka här"/>
-           <Label fx:id="textField" layoutX="10.0" layoutY="36.0"/>
+           <TextField fx:id="textField1"/>
+           <Label fx:id="label1" layoutX="10.0" layoutY="36.0"/>
        </VBox>
    </top>
 </BorderPane>
