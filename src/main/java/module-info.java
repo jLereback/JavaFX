@@ -5,4 +5,6 @@ module se.iths.javafx {
 
     opens se.iths.javafx to javafx.fxml;
     exports se.iths.javafx;
+    exports se.iths.javafx.controller;
+    opens se.iths.javafx.controller to javafx.fxml;
 }
