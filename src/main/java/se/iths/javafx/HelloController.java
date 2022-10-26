@@ -22,12 +22,8 @@ public class HelloController {
     @FXML
     protected void initialize() {
         textField1.textProperty().bindBidirectional(helloModel.textProperty());
-        //label1.textProperty().bind(helloModel.textProperty());
+        label1.textProperty().bind(helloModel.textProperty());
     }
-
-
-
-
 
     @FXML
     protected void onHelloButtonClick() {
@@ -42,7 +38,7 @@ public class HelloController {
         else {
             label1.setBackground(Background.fill(Color.TRANSPARENT));
             label1.setText("I am invisible");
-            button1.setText("Orange");
+            button1.setText("Purple");
         }
 
     }
